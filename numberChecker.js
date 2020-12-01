@@ -24,7 +24,7 @@ const findHighlyCompNum = upperBound => {
             }
         }
     }
-    return `${currentWinner} is the most highly composite number up to ${upperBound}, with ${winnerDivisors} divisors: ${winnerList.join(", ")} and ${currentWinner})`
+    return `${currentWinner} is the most highly composite number up to ${upperBound}, with ${winnerDivisors} divisors: ${winnerList.join(", ")} and ${currentWinner}.`
 };
 
 console.log(findHighlyCompNum(67820));
