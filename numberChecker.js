@@ -1,10 +1,10 @@
-//highly composit number finder
+//highly composite number finder
 
 const findHighlyCompNum = upperBound => {
     let currentWinner = 0;
     let winnerDivisors = 1;
     let winnerList = [];
-    if (upperBound <= 3){
+    if (upperBound <= 2){
         return 'The first highly composite numbers are 1 and 2. Hooray.'
     }
     for (let i = Math.floor(upperBound/2); i <= upperBound; i++){
@@ -24,7 +24,7 @@ const findHighlyCompNum = upperBound => {
             }
         }
     }
-    return `${currentWinner} is the most highly composite number up to ${upperBound}, with ${winnerDivisors} divisors: ${winnerList.join(", ")} and ${upperBound})`
+    return `${currentWinner} is the most highly composite number up to ${upperBound}, with ${winnerDivisors} divisors: ${winnerList.join(", ")} and ${currentWinner})`
 };
 
-console.log(findHighlyCompNum(5));
+console.log(findHighlyCompNum(67820));
